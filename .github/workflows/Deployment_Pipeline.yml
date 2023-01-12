@@ -1,8 +1,10 @@
-name: Deployment pipeline
-on:
- push:
- branches:
- - master
+#name: Deployment pipeline
+name: Deployment Pipeline  # Name of the work flow
+
+on:             # This is to manage triggers 
+  push:
+    branches:
+      - master
 jobs:
  simple_deployment_pipeline:
  runs-on: ubuntu-20.04
